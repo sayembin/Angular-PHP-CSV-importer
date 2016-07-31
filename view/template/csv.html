@@ -1,0 +1,16 @@
+
+<table  class="table table-striped table-bordered table-hover">
+  <thead >
+     <tr *ngFor="let csvData of csvDatas; let i = index">
+       <th *ngIf="i==0">  {{ csvData[0] }}  </th>
+       <th *ngIf="i==0">  {{ csvData[1] }}  </th>
+      <th *ngIf="i==0">   {{ csvData[2] }}</th>
+    </tr>
+  </thead>
+  <tbody >
+     <tr *ngFor=" let csvData of csvDatas; let i = index">
+      <td *ngIf="i>0">  {{ csvData[0] }} </td><td *ngIf="i>0">  {{ csvData[1] }} </td><td *ngIf="i>0">  {{ csvData[2] }} </td>
+     </tr>
+
+   </tbody>
+  </table>
